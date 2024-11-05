@@ -66,8 +66,8 @@ class Timer:
                 self.minutes = 0
                 self.horas += 1
 
-            time_reset= f"{self.hours:02}:{self.minutes:02}:{self.seconds:02}.{self.milliseconds:03}"
-            self.update_display(time_reset)
+            time_format= f"{self.hours:02}:{self.minutes:02}:{self.seconds:02}.{self.milliseconds:03}"
+            self.update_display(time_format)
             self.master.after(10, self.update_timer)
 
 
